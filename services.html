@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koumou's Portfolio</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo"><span>A</span>nastasis.</h2>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Page</a>
+        </nav>
+
+        <button class="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sun-img disabled" width="22" height="22" fill="none" viewBox="0 0 22 22" alt="light mode"><g clip-path="url(#a)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.98" d="M11 1.833v1.834m0 14.666v1.834M3.667 11H1.833m3.955-5.212L4.492 4.492m11.72 1.296 1.297-1.296M5.788 16.215l-1.296 1.296m11.72-1.296 1.297 1.296M20.167 11h-1.834m-2.75 0a4.583 4.583 0 1 1-9.167 0 4.583 4.583 0 0 1 9.167 0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="moon-img" width="22" height="22" fill="none" viewBox="0 0 22 22" alt ="dark mode"><g clip-path="url(#a)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.98" d="M20.125 11.877A7.333 7.333 0 1 1 10.124 1.875a9.168 9.168 0 1 0 10.001 10.002Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+        </button>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-btn" onclick=showSidebar()>
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Sidebar Navigation -->
+         <nav class="sidebar">
+            <a href="#" onclick=hideSidebar()><i class="fas fa-times close-icon"></i></a>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Page</a>
+         </nav>
+
+    </header>
+
+    <div class="services-paragraph">
+        <h1>My <span>UpWork</span> and <span>Fiverr</span> services.</h1>
+        <p>Explore my freelance offerings on trusted platforms. I specialize in designing and customizing 
+          responsive mobile-first websites using modern technologies<br> such as Bootstrap, Tailwind CSS, React, 
+          WordPress, and HTML/CSS. Whether you're starting from scratch or need a redesign, I provide efficient, scalable, 
+          and clean solutions tailored to your needs.</p>
+
+    </div>
+    
+    <div class="service-container">
+
+        <div class="service-box">
+            <img src="./images/fiverr.jfif" alt="Fiverr" class="service-logo">
+            <div class="service-content">
+                <h2>My Fiverr Page</h2>
+                <p>Quickly design and customize responsive mobile-first sites with Bootstrap.</p>
+                <a href="#" class="service-btn">Check out my Fiverr</a>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <img src="./images/upwork.jfif" alt="UpWork" class="service-logo">
+            <div class="service-content">
+                <h2>My UpWork Page</h2>
+                <p>Quickly design and customize responsive mobile-first sites with Bootstrap.</p>
+                <a href="#" class="service-btn">Check out my UpWork</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="common.js"></script>
+</body>
+</html>

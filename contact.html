@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koumou's Portfolio</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo"><span>A</span>nastasis.</h2>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Page</a>
+        </nav>
+        <!--<button type="button" class="contact-btn">Contact Me</button>-->
+        <button class="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sun-img disabled" width="22" height="22" fill="none" viewBox="0 0 22 22" alt="light mode"><g clip-path="url(#a)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.98" d="M11 1.833v1.834m0 14.666v1.834M3.667 11H1.833m3.955-5.212L4.492 4.492m11.72 1.296 1.297-1.296M5.788 16.215l-1.296 1.296m11.72-1.296 1.297 1.296M20.167 11h-1.834m-2.75 0a4.583 4.583 0 1 1-9.167 0 4.583 4.583 0 0 1 9.167 0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="moon-img" width="22" height="22" fill="none" viewBox="0 0 22 22" alt ="dark mode"><g clip-path="url(#a)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.98" d="M20.125 11.877A7.333 7.333 0 1 1 10.124 1.875a9.168 9.168 0 1 0 10.001 10.002Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h22v22H0z"/></clipPath></defs></svg>
+        </button>
+
+       <!-- Hamburger Menu Button -->
+        <button class="menu-btn" onclick=showSidebar()>
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Sidebar Navigation -->
+         <nav class="sidebar">
+            <a href="#" onclick=hideSidebar()><i class="fas fa-times close-icon"></i></a>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Page</a>
+         </nav>
+         
+    </header>
+
+    <div class="main-container">
+        <div class="details-container">
+            <div class="first-half">
+                <h1>I'd love to Hear <br> From You</h1>
+                <p>Whether it's feedback, ideas, or collaborations <br> I'm always open to work with you!</p>
+                <div class="contact-row" id="email-icon">
+                    <span class="p-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <p>anastasis7714@gmail.com</p>
+                </div>
+
+                <div class="contact-row" id="phone-icon">
+                    <span class="p-icon"><i class="fa-solid fa-phone"></i></span>
+                    <p>(+30) 6940762142</p>
+                </div>
+
+                <div class="contact-row" id="location-icon">
+                    <span class="p-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <p>Thessaloniki, Greece</p>
+                </div>
+            </div>
+
+            <div class="sec-half">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="Subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button id="submit-btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="contactme.js"></script>
+</body>
+</html>

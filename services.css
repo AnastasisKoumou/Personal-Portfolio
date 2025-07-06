@@ -1,0 +1,73 @@
+.services-paragraph {
+  text-align: center;
+  margin: 200px 0 100px 0; 
+}
+  
+.services-paragraph h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+  
+.services-paragraph p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: var(--base-backround-color);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.service-content p {
+  margin-bottom: 1rem;
+}
+
+.service-btn {
+  color: white;
+  background-color: #0a66c2;
+  border: 2px solid #0a66c2;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer;
+}
