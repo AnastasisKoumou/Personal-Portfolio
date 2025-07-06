@@ -16,7 +16,6 @@
     height: 75vh;
     width: 75%;
     padding: 2rem;
-    border: 2px ;
     border-radius: 15px;
     box-shadow: var(--contact-box-shadow-color);
 }
@@ -43,7 +42,6 @@
     width: 50%;
     max-width: 500px;
     padding: 2rem;
-    border: 2px;
     border-radius: 15px;
     box-shadow: var(--contact-box-shadow-color);
 }
@@ -66,8 +64,6 @@ input[type="text"], input[type="email"], textarea {
     font-size: 1rem;
     max-width: 100%;
     display: block;
-    padding: 0.75rem;
-    margin-bottom: 1.5rem;
 }
 
 input[type="email"]:invalid {
@@ -127,6 +123,24 @@ button[type="submit"] {
 }
 
 @media (max-width: 1024px) {
+
+    .logo {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .theme-switch {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
     .main-container {
         flex-direction: column;
         align-self: center;
@@ -165,5 +179,83 @@ button[type="submit"] {
         width: 100%;
         padding: 12px;
         font-size: 1rem;
+    }
+}
+
+/* Small Tablets & Landscape Phones */
+@media (max-width: 768px) {
+    .details-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .first-half h1 {
+        font-size: 1.75rem;
+    }
+
+    .first-half p {
+        font-size: 0.95rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.95rem;
+        padding: 0.65rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .details-container {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .first-half h1 {
+        font-size: 1.5rem;
+    }
+
+    .first-half p {
+        font-size: 0.9rem;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .p-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px;
     }
 }
